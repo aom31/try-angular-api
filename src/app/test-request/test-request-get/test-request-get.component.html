@@ -1,0 +1,22 @@
+<h1>Test To Show</h1>
+
+<div>
+<p-table [value]="customerList" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>TaxId</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-customerList>
+        <tr>
+            <td>{{ customerList.Code }}</td>
+            <td>{{ customerList.FullName }}</td>
+            <td>{{ customerList.Category  }}</td>
+            <td>{{ customerList.TaxId  }}</td>
+        </tr>
+    </ng-template>
+</p-table>
+</div>
